@@ -1,0 +1,12 @@
+
+{% if stu_list %}
+<ul>
+    {% for s in stu_list %}
+    <li><a href="/enroll/{{ s.id }}/">{{ s.student_name }}</a> </li>
+    {% endfor %}
+    </ul>
+{% else %}
+<p>name is unavailable</p>
+{% endif %}
+
+<button><a href="/enroll/create/">enroll</a> </button>
