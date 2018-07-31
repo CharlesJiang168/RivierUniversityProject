@@ -1,0 +1,33 @@
+------------------------------- GOAL ------------------------------
+Write a program that implements the n nearest neighbor algorithm discussed in class and test it on the GLASS data provided in the data sources folder in this week.  The First Attribute should be discarded - it is just a sample number (like 1,2,3).  The last attribute IS THE TYPE OF GLASS - the classification attribute
+
+
+Use the data below and answer what type of glass they are: You can provide the class number (like 1,2,3,etc) or translate the number to a type of glass.  Note that the test data below DOES NOT HAVE ANYTHING LIKE THE INSTANCE NUMBER OR A CLASSIFICATION - YOU ARE TRYING TO DISCOVER THE CLASSIFICATION AND THE INSTANCE NUMBER IS USELESS TO US FOR CLASSIFICATION EVEN THOUGH IT APPEARS IN THE REAL DATA.
+
+(A) 1.52211,14.19,3.78,0.91,71.36,0.23,9.14,0.00,0.37
+(B) 1.51514,14.01,2.68,3.50,69.89,1.68,5.87,2.20,0.00
+(C) 1.51915,12.73,1.85,1.86,72.69,0.60,10.09,0.00,0.00
+
+------------------------------- RESULT ------------------------------
+(A) belongs to type 3 (vehicle_windows_float_processed)
+(B) belongs to type 3 (vehicle_windows_float_processed)
+(C) belongs to type 1 (building_windows_float_processed)
+
+------------------------------- PROGRAM USAGE ------------------------------
+./a.out input_file_path
+
+So, when you run at your end, be sure to update the correct glass.data file path.
+Edit arguments for XCode only, Product->Scheme->Edit Scheme->Arguments
+
+Then the program prompt user for the testing glass attributes, please enter those attributes in one line separate by comma.
+When enter "q", exit the program.
+
+------------------------------- SAMPLE OUTPUT ------------------------------
+Please enter the testing glass attributes: 1.52211,14.19,3.78,0.91,71.36,0.23,9.14,0.00,0.37
+[3]: vehicle_windows_float_processed
+Please enter the testing glass attributes: 1.51514,14.01,2.68,3.50,69.89,1.68,5.87,2.20,0.00
+[3]: vehicle_windows_float_processed
+Please enter the testing glass attributes: 1.51915,12.73,1.85,1.86,72.69,0.60,10.09,0.00,0.00
+[1]: building_windows_float_processed
+Please enter the testing glass attributes: q
+Program ended with exit code: 0
