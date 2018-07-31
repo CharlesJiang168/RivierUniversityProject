@@ -1,0 +1,200 @@
+1. How does cache size affect the number of hits and misses?
+
+1.trace
+a. UorSC=U UBlockSize=16 USetSize=1 UNumBlocks=1024 UNT=5 MissPenalty=100
+memorySize: 4294967295
+--------- Configuration -----------
+Unified Cache, Block size: 16bytes, Set size: 1blocks, Number of Blocks: 1024blocks, Hit time: 5.0ns, Miss penalty: 100.0ns
+After calculation, cacheSize: 16384bytes, numSets: 1024sets
+tag: 18bits, index: 10bits, offset: 4bits
+...... Parsing trace files ......
+--------- End of trace files parsing -----------
+--------- Displaying Statistics -----------
+Total Memory References: 630166 Out of 944476
+Average Memory Access Time: 100.0
+
+Cache hits: 1 <<>> Cache misses: 630165
+Hit rate total: 1.587e-06
+Miss rate total: 1.000
+
+Miss Read: 315455 & Miss Write: 314710
+Miss Read Rate: 1.000 & Miss Write Rate: 1.000
+Compulsary misses: 315224.0 & Conflict misses: 314941.0
+Compulsary Miss Rate: 0.5002 & Conflict Miss Rate: 0.4998
+------------------------------------------------------------------
+
+b. UorSC=U UBlockSize=32 USetSize=1 UNumBlocks=1024 UNT=5 MissPenalty=100
+memorySize: 4294967295
+--------- Configuration -----------
+Unified Cache, Block size: 32bytes, Set size: 1blocks, Number of Blocks: 1024blocks, Hit time: 5.0ns, Miss penalty: 100.0ns
+After calculation, cacheSize: 32768bytes, numSets: 1024sets
+tag: 17bits, index: 10bits, offset: 5bits
+...... Parsing trace files ......
+--------- End of trace files parsing -----------
+--------- Displaying Statistics -----------
+Total Memory References: 630166 Out of 944476
+Average Memory Access Time: 100.0
+
+Cache hits: 3 <<>> Cache misses: 630163
+Hit rate total: 4.761e-06
+Miss rate total: 1.000
+
+Miss Read: 315454 & Miss Write: 314709
+Miss Read Rate: 1.000 & Miss Write Rate: 1.000
+Compulsary misses: 315228.0 & Conflict misses: 314936.0
+Compulsary Miss Rate: 0.5002 & Conflict Miss Rate: 0.4998
+------------------------------------------------------------------
+
+c. UorSC=U UBlockSize=64 USetSize=1 UNumBlocks=1024 UNT=5 MissPenalty=100
+memorySize: 4294967295
+--------- Configuration -----------
+Unified Cache, Block size: 64bytes, Set size: 1blocks, Number of Blocks: 1024blocks, Hit time: 5.0ns, Miss penalty: 100.0ns
+After calculation, cacheSize: 65536bytes, numSets: 1024sets
+tag: 16bits, index: 10bits, offset: 6bits
+...... Parsing trace files ......
+--------- End of trace files parsing -----------
+--------- Displaying Statistics -----------
+Total Memory References: 630166 Out of 944476
+Average Memory Access Time: 100.0
+
+Cache hits: 3 <<>> Cache misses: 630163
+Hit rate total: 4.761e-06
+Miss rate total: 1.000
+
+Miss Read: 315454 & Miss Write: 314709
+Miss Read Rate: 1.000 & Miss Write Rate: 1.000
+Compulsary misses: 315235.0 & Conflict misses: 314929.0
+Compulsary Miss Rate: 0.5002 & Conflict Miss Rate: 0.4998
+------------------------------------------------------------------
+
+d. UorSC=U UBlockSize=128 USetSize=1 UNumBlocks=1024 UNT=5 MissPenalty=100
+memorySize: 4294967295
+--------- Configuration -----------
+Unified Cache, Block size: 128bytes, Set size: 1blocks, Number of Blocks: 1024blocks, Hit time: 5.0ns, Miss penalty: 100.0ns
+After calculation, cacheSize: 131072bytes, numSets: 1024sets
+tag: 15bits, index: 10bits, offset: 7bits
+...... Parsing trace files ......
+--------- End of trace files parsing -----------
+--------- Displaying Statistics -----------
+Total Memory References: 630166 Out of 944476
+Average Memory Access Time: 100.0
+
+Cache hits: 18 <<>> Cache misses: 630148
+Hit rate total: 2.856e-05
+Miss rate total: 1.000
+
+Miss Read: 315444 & Miss Write: 314704
+Miss Read Rate: 1.000 & Miss Write Rate: 1.000
+Compulsary misses: 315225.0 & Conflict misses: 314929.0
+Compulsary Miss Rate: 0.5002 & Conflict Miss Rate: 0.4998
+------------------------------------------------------------------
+
+e. UorSC=U UBlockSize=256 USetSize=1 UNumBlocks=1024 UNT=5 MissPenalty=100
+memorySize: 4294967295
+--------- Configuration -----------
+Unified Cache, Block size: 256bytes, Set size: 1blocks, Number of Blocks: 1024blocks, Hit time: 5.0ns, Miss penalty: 100.0ns
+After calculation, cacheSize: 262144bytes, numSets: 1024sets
+tag: 14bits, index: 10bits, offset: 8bits
+...... Parsing trace files ......
+--------- End of trace files parsing -----------
+--------- Displaying Statistics -----------
+Total Memory References: 630166 Out of 944476
+Average Memory Access Time: 99.99
+
+Cache hits: 44 <<>> Cache misses: 630122
+Hit rate total: 6.982e-05
+Miss rate total: 0.9999
+
+Miss Read: 315427 & Miss Write: 314695
+Miss Read Rate: 0.9999 & Miss Write Rate: 1.000
+Compulsary misses: 315221.0 & Conflict misses: 314916.0
+Compulsary Miss Rate: 0.5003 & Conflict Miss Rate: 0.4998
+------------------------------------------------------------------
+
+f. UorSC=U UBlockSize=512 USetSize=1 UNumBlocks=1024 UNT=5 MissPenalty=100
+memorySize: 4294967295
+--------- Configuration -----------
+Unified Cache, Block size: 512bytes, Set size: 1blocks, Number of Blocks: 1024blocks, Hit time: 5.0ns, Miss penalty: 100.0ns
+After calculation, cacheSize: 524288bytes, numSets: 1024sets
+tag: 13bits, index: 10bits, offset: 9bits
+...... Parsing trace files ......
+--------- End of trace files parsing -----------
+--------- Displaying Statistics -----------
+Total Memory References: 630166 Out of 944476
+Average Memory Access Time: 99.99
+
+Cache hits: 75 <<>> Cache misses: 630091
+Hit rate total: 0.0001190
+Miss rate total: 0.9999
+
+Miss Read: 315411 & Miss Write: 314680
+Miss Read Rate: 0.9999 & Miss Write Rate: 0.9999
+Compulsary misses: 315230.0 & Conflict misses: 314891.0
+Compulsary Miss Rate: 0.5003 & Conflict Miss Rate: 0.4998
+------------------------------------------------------------------
+
+g. UorSC=U UBlockSize=1024 USetSize=1 UNumBlocks=1024 UNT=5 MissPenalty=100
+memorySize: 4294967295
+--------- Configuration -----------
+Unified Cache, Block size: 1024bytes, Set size: 1blocks, Number of Blocks: 1024blocks, Hit time: 5.0ns, Miss penalty: 100.0ns
+After calculation, cacheSize: 1048576bytes, numSets: 1024sets
+tag: 12bits, index: 10bits, offset: 10bits
+...... Parsing trace files ......
+--------- End of trace files parsing -----------
+--------- Displaying Statistics -----------
+Total Memory References: 630166 Out of 944476
+Average Memory Access Time: 99.98
+
+Cache hits: 152 <<>> Cache misses: 630014
+Hit rate total: 0.0002412
+Miss rate total: 0.9998
+
+Miss Read: 315373 & Miss Write: 314641
+Miss Read Rate: 0.9997 & Miss Write Rate: 0.9998
+Compulsary misses: 315170.0 & Conflict misses: 314913.0
+Compulsary Miss Rate: 0.5003 & Conflict Miss Rate: 0.4999
+------------------------------------------------------------------
+
+h. UorSC=U UBlockSize=2048 USetSize=1 UNumBlocks=1024 UNT=5 MissPenalty=100
+memorySize: 4294967295
+--------- Configuration -----------
+Unified Cache, Block size: 2048bytes, Set size: 1blocks, Number of Blocks: 1024blocks, Hit time: 5.0ns, Miss penalty: 100.0ns
+After calculation, cacheSize: 2097152bytes, numSets: 1024sets
+tag: 11bits, index: 10bits, offset: 11bits
+...... Parsing trace files ......
+--------- End of trace files parsing -----------
+--------- Displaying Statistics -----------
+Total Memory References: 630166 Out of 944476
+Average Memory Access Time: 99.95
+
+Cache hits: 306 <<>> Cache misses: 629860
+Hit rate total: 0.0004856
+Miss rate total: 0.9995
+
+Miss Read: 315301 & Miss Write: 314559
+Miss Read Rate: 0.9995 & Miss Write Rate: 0.9995
+Compulsary misses: 315063.0 & Conflict misses: 314948.0
+Compulsary Miss Rate: 0.5002 & Conflict Miss Rate: 0.5000
+------------------------------------------------------------------
+
+i. UorSC=U UBlockSize=4096 USetSize=1 UNumBlocks=1024 UNT=5 MissPenalty=100
+memorySize: 4294967295
+--------- Configuration -----------
+Unified Cache, Block size: 4096bytes, Set size: 1blocks, Number of Blocks: 1024blocks, Hit time: 5.0ns, Miss penalty: 100.0ns
+After calculation, cacheSize: 4194304bytes, numSets: 1024sets
+tag: 10bits, index: 10bits, offset: 12bits
+...... Parsing trace files ......
+--------- End of trace files parsing -----------
+--------- Displaying Statistics -----------
+Total Memory References: 630166 Out of 944476
+Average Memory Access Time: 99.90
+
+Cache hits: 679 <<>> Cache misses: 629487
+Hit rate total: 0.001077
+Miss rate total: 0.9989
+
+Miss Read: 315137 & Miss Write: 314350
+Miss Read Rate: 0.9990 & Miss Write Rate: 0.9989
+Compulsary misses: 314860.0 & Conflict misses: 314987.0
+Compulsary Miss Rate: 0.5002 & Conflict Miss Rate: 0.5004
+------------------------------------------------------------------

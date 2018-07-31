@@ -1,0 +1,91 @@
+1. UorSC=U UBlockSize=16 USetSize=2 UNumBlocks=1024 UNT=5 MissPenalty=100
+memorySize: 4294967295
+--------- Configuration -----------
+Unified Cache, Block size: 16bytes, Set size: 2blocks, Number of Blocks: 1024blocks, Hit time: 5.0ns, Miss penalty: 100.0ns
+After calculation, cacheSize: 16384bytes, numSets: 512sets
+tag: 19bits, index: 9bits, offset: 4bits
+...... Parsing trace files ......
+--------- End of trace files parsing -----------
+--------- Displaying Statistics -----------
+Total Memory References: 581544 Out of 871083
+Average Memory Access Time: 100.0
+
+Cache hits: 4 <<>> Cache misses: 581540
+Hit rate total: 6.878e-06
+Miss rate total: 1.000
+
+Miss Read: 290092 & Miss Write: 291448
+Miss Read Rate: 1.000 & Miss Write Rate: 1.000
+Compulsary misses: 291937.0 & Conflict misses: 289605.0
+Compulsary Miss Rate: 0.5020 & Conflict Miss Rate: 0.4980
+--------------------------------------------------------------------------
+
+2. UorSC=U UBlockSize=16 USetSize=1 UNumBlocks=1024 UNT=5 MissPenalty=100
+memorySize: 4294967295
+--------- Configuration -----------
+Unified Cache, Block size: 16bytes, Set size: 1blocks, Number of Blocks: 1024blocks, Hit time: 5.0ns, Miss penalty: 100.0ns
+After calculation, cacheSize: 16384bytes, numSets: 1024sets
+tag: 18bits, index: 10bits, offset: 4bits
+...... Parsing trace files ......
+--------- End of trace files parsing -----------
+--------- Displaying Statistics -----------
+Total Memory References: 581544 Out of 871083
+Average Memory Access Time: 100.0
+
+Cache hits: 3 <<>> Cache misses: 581541
+Hit rate total: 5.159e-06
+Miss rate total: 1.000
+
+Miss Read: 290091 & Miss Write: 291450
+Miss Read Rate: 1.000 & Miss Write Rate: 1.000
+Compulsary misses: 291946.0 & Conflict misses: 289595.0
+Compulsary Miss Rate: 0.5020 & Conflict Miss Rate: 0.4980
+--------------------------------------------------------------------------
+
+	
+3. UorSC=U UBlockSize=128 USetSize=4 UNumBlocks=16384 UNT=2 MissPenalty=108 -- (2^14)
+memorySize: 4294967295
+--------- Configuration -----------
+Unified Cache, Block size: 128bytes, Set size: 4blocks, Number of Blocks: 16384blocks, Hit time: 2.0ns, Miss penalty: 108.0ns
+After calculation, cacheSize: 2097152bytes, numSets: 4096sets
+tag: 13bits, index: 12bits, offset: 7bits
+...... Parsing trace files ......
+--------- End of trace files parsing -----------
+--------- Displaying Statistics -----------
+Total Memory References: 581544 Out of 871083
+Average Memory Access Time: 108.0
+
+Cache hits: 269 <<>> Cache misses: 581275
+Hit rate total: 0.0004626
+Miss rate total: 0.9995
+
+Miss Read: 289946 & Miss Write: 291329
+Miss Read Rate: 0.9995 & Miss Write Rate: 0.9996
+Compulsary misses: 299400.0 & Conflict misses: 281996.0
+Compulsary Miss Rate: 0.5151 & Conflict Miss Rate: 0.4851
+--------------------------------------------------------------------------
+
+4. UorSC=SC IBlockSize=64 ISetSize=1 INumBlocks=2048 DBlockSize=128 DSetSize=2 DNumBlock=16384 UNT=1 MissPenalty=120
+memorySize: 4294967295
+--------- Configuration -----------
+Separate Cache, Instruction Block size: 64bytes, Instruction Set size: 1blocks, Instruction Number of Blocks: 2048blocks
+				 Data Block size: 128bytes, Data Set size: 2blocks, Data Number of Blocks: 16384blocks, Hit time: 1.0ns, Miss penalty in ns: 120.0ns
+After calculation, cacheSize: 2097152bytes, numSets: 8192sets
+tag: 12bits, index: 13bits, offset: 7bits
+After calculation, cacheSize: 131072bytes, numSets: 2048sets
+tag: 15bits, index: 11bits, offset: 6bits
+...... Parsing trace files ......
+--------- End of trace files parsing -----------
+--------- Displaying statistics -----------
+Total Memory References: 871083 Out of 871083
+Average Memory Access Time: 120.0
+
+Cache hits: 249 <<>> Cache misses: 870834
+Hit rate total: 0.0002859
+Miss rate total: 0.9997
+
+Miss Read: 579458 & Miss Write: 291376
+Miss Read Rate: 0.9997 & Miss Write Rate: 0.9997
+Compulsary misses: 301486.0 & Conflict misses: 569422.0
+Compulsary Miss Rate: 0.3462 & Conflict Miss Rate: 0.6539
+--------------------------------------------------------------------------
